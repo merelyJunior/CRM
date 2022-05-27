@@ -1,0 +1,88 @@
+<div class="p-4 my-4 border bg-light card rounded-top text-center">
+  <h3 class="py-2 border-bottom">Добавить медиа</h3>
+  <form id="uploadMedia" class="bg-light my-4 py-3 row">
+    <div class="row my-3">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-3 me-auto">
+          <label for="typePhoto" class="my-2 text-start small">Пол:</label>
+          <select class="form-control" id="" name="typePhoto">
+            <option selected="" value="Man">Man</option>
+            <option value="Woman">Woman</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-lg-6 col-8">
+        <label for="fileVideo" class="my-2 text-start small"
+          >Выберите видео файл:</label
+        >
+        <input
+          type="file"
+          name="fileVideo"
+          class="form-control-file d-block"
+          id="fileVideo"
+        />
+      </div>
+      <div class="col-lg-4 col-3 me-auto ms-0 m-clear"></div>
+    </div>
+    <div class="row my-3 align-items-end">
+      <div class="col-lg-8 col-md-8 col-8 ms-0 me-auto">
+        <label for="filePhoto" class="my-2 text-start small"
+          >Выберите фото Face:</label
+        >
+        <input
+          type="file"
+          name="addImages"
+          id="addImages"
+          multiple=""
+          class="d-block"
+        />
+      </div>
+      <div class="col-lg-3 col-md-3 col-3 me-0 ms-auto"></div>
+    </div>
+    <div class="row">
+      <div
+        id="uploadImagesList"
+        class="d-flex flex-row flex-wrap my-3 ms-a me-a"
+      >
+        <div class="item template">
+          <div class="img-wrap">
+            <img src="image.jpg" alt="" />
+          </div>
+          <span class="delete-link"><i class="fas fa-times"></i></span>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="row my-3 align-items-end">
+      <div class="col-lg-8 col-md-8 col-8 ms-0 me-auto">
+        <label for="filePhoto" class="my-2 text-start small"
+          >Выберите фото Nude:</label
+        >
+        <input
+          type="file"
+          name="addImages"
+          id="addImages"
+          multiple=""
+          class="d-block"
+        />
+      </div>
+      <div class="col-lg-3 col-md-3 col-3 me-0 ms-auto"></div>
+    </div>
+    <!-- <div class="row">
+          <div id="uploadImagesLists" class="d-flex flex-row flex-wrap my-3 ms-a me-a">
+              <div class="item template">
+                  <div class="img-wrap">
+                      <img src="image.jpg" alt="">
+                  </div>
+                  <span class="delete-link" ><i class="fas fa-times"></i></span>
+              </div>
+          </div>
+          <div class="clear"></div>
+        </div> -->
+    <div class="text-center">
+      <button id="saveImg" type="submit" class="btn btn-primary mt-4">
+        Сохранить
+      </button>
+    </div>
+  </form>
+</div>
